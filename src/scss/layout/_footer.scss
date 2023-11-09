@@ -1,0 +1,89 @@
+.footer {
+    padding: 90px 0;
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__selection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__link {
+        color: var(--btn-color);
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: var(--btn-color-active);
+        }
+    }
+
+    &__privacy {
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: var(--btn-color-active);
+        }
+    }
+
+    &__logo {
+        color: #919399;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 0;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: var(--btn-color-active);
+        }
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 24px;
+
+    &__pics {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__link {
+        transition: color 0.2s ease-in;
+
+        & > svg {
+            fill: var(--btn-color);
+        }
+
+        &:hover {
+            & > svg {
+                fill: var(--btn-color-active);
+            }
+        }
+    }
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__number {
+        color: var(--btn-color);
+
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: var(--btn-color-active);
+        }
+    }
+}
