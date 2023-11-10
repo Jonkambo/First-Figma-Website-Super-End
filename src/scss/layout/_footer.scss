@@ -32,7 +32,7 @@
     }
 
     &__logo {
-        color: #919399;
+        color: var(--dialog-input-color);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;

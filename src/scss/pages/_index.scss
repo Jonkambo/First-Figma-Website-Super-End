@@ -122,7 +122,7 @@
         width: 70px;
         height: 70px;
         border-radius: 70px;
-        border: 2px solid #FF6743;
+        border: 2px solid var(--btn-color-hover);
         
         background: lightgray 50% / cover no-repeat;
     }
@@ -198,7 +198,7 @@
     gap: 16px;
 
     &__label {
-        color: #919399;
+        color: var(--dialog-input-color);
         cursor: text;
     }
 
@@ -217,7 +217,7 @@
         }
 
         &:hover {
-            border: 1px solid #FF6743;
+            border: 1px solid var(--btn-color-hover);
         }
     }
 
@@ -246,9 +246,9 @@
     
         background: url(.././assets/images/arrow.svg) no-repeat right;
         background-position-x: calc(100% - 9px);
-        background-color: #FFF;
+        background-color: var(--bg-color);
         
-        color: #919399;
+        color: var(--dialog-input-color);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -257,7 +257,7 @@
         cursor: pointer;
 
         &:hover {
-            border: 1px solid #FF6743;
+            border: 1px solid var(--btn-color-hover);
         }
     }
 }
@@ -276,7 +276,7 @@
     }
 
     &__label {
-        color: #919399;
+        color: var(--dialog-input-color);
         cursor: pointer;
     }
 
@@ -305,7 +305,7 @@
                 left: 0;
                 width: 20px;
                 height: 20px;
-                border: 1px solid #000;
+                border: 1px solid var(--text-color);
                 border-radius: 20px;
                 background-color: var(--bg-color);
                 content: '';
@@ -358,7 +358,6 @@
     }
 
     &__text {
-        width: 371px;
         margin: 0;
     }
 
@@ -485,7 +484,7 @@
         outline: none;
 
         &:hover {
-            border: 1px solid #FF6743;
+            border: 1px solid var(--btn-color-hover);
         }
     }
 
@@ -493,5 +492,38 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+
+.advantages-work {
+    padding-bottom: 120px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
+
+    &__block {
+        padding: 24px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        border-radius: 16px;
+        background: var(--bg-color);
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    &__pic {
+        padding: 10px;
+        border-radius: 50%;
+        background: rgba(255, 103, 67, 0.05);
+        width: 44px;
+        height: 44px;
     }
 }
