@@ -8,7 +8,7 @@ import { isProduction, paths } from '../config.mjs'
 
 const images = () => {
     return gulp
-        .src(`${paths.src.images}/**/*`)
+        .src(`${paths.src.images}/**/*.{jpg,jpeg,png,gif}`)
         .pipe(changed(paths.dist.images))
         .pipe(imagemin({ verbose: true }))
         .pipe(gulp.dest(paths.dist.images))

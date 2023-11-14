@@ -19,5 +19,5 @@ gulp.task('default', gulp.series(
 
 gulp.task('build', gulp.series(
     cleanDist,
-    gulp.parallel(html, styles, scripts, fonts, fontsWoff, fontsSvg, files, images, imagesWebp, imagesAvif, icons, favicon),
+    gulp.parallel(html, styles, scripts, fonts, fontsWoff, fontsSvg, files, images, imagesWebp, imagesAvif, imagesSvg, icons, favicon),
 ));

@@ -33,7 +33,6 @@
 .possibilities {
     position: relative;
     margin-top: -76px;
-    padding-bottom: 120px;
 }
 
 .possibilities-cards {
@@ -73,26 +72,29 @@
         flex-shrink: 0;
         gap: 8px;
     }
+
+    &__icon {
+        flex-shrink: 0;
+    }
 }
 
 .about-service {
-    padding-bottom: 120px;
 
     &__title {
         margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 113px;
     }
 }
 
 .advantage-info {
     display: flex;
-    gap: 113px;
-
-    &__advantage {
-        display: flex;
-        flex-wrap: wrap;
-        width: 503px;
-        gap: 8px;
-    }
+    flex-wrap: wrap;
+    width: 503px;
+    gap: 8px;
 }
 
 .advantage-color {
@@ -123,42 +125,41 @@
         height: 70px;
         border-radius: 70px;
         border: 2px solid var(--btn-color-hover);
+        flex-shrink: 0;
         
         background: lightgray 50% / cover no-repeat;
     }
 }
 
-.how-it-works {
-    padding: 120px 0;
-
+.how-it-works{
     &__title {
         margin-bottom: 40px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
     }
 }
 
 .selection-block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-
-    &__frames {
-        display: flex;
-        padding: 16px;
-        gap: 8px;
-        align-items: center;
-        border-radius: 16px;
-        background: var(--bg-color);
-        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
-    }
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--bg-color);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
 
     &__img {
         width: 50px;
         height: 50px;
+        flex-shrink: 0;
     }
 }
 
 .calculator {
-    padding: 120px 0;
 
     &__title {
         margin-bottom: 40px;
@@ -333,27 +334,26 @@
         width: 624px;
         margin-bottom: 40px;
     }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 33px;
+    } 
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 33px;
+.sell-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 28px;
+    border-radius: 24px;
+    background: var(--bg-color);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    height: 344px;
 
-
-    &__items {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 32px 28px;
-        border-radius: 24px;
-        background: var(--bg-color);
-        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
-        height: 344px;
-    } 
-
-    &__info {
+    &__info-text {
         width: 420px;
     }
 
@@ -361,16 +361,31 @@
         margin: 0;
     }
 
-    
-    &__img_1 {
+    &:nth-child(1) &__text {
+        width: 338px;
+    }
+
+    &:nth-child(2) &__text {
+        width: 360px;
+    }
+
+    &:nth-child(3) &__text {
+        width: 371px;
+    }
+
+    &:nth-child(4) &__text {
+        width: 360px;
+    }
+
+    &:nth-child(1) &__img {
         position: absolute;
         height: 150px;
         width: 150px;
         bottom: 33px;
         right: 45px;
     }
-    
-    &__img_2 {
+
+    &:nth-child(2) &__img {
         position: absolute;
         width: 234.667px;
         height: 176px;
@@ -378,22 +393,21 @@
         right: 5px;
     }
 
-    &__img_3 {
+    &:nth-child(3) &__img {
         position: absolute;
         width: 202px;
         height: 202px;
-        right: 27px; 
-        bottom: 0px;
+        right: 0px; 
+        bottom: -25px;
     }
 
-    &__img_4 {
+    &:nth-child(4) &__img {
         position: absolute;
         width: 180px;
         height: 180px;
-        right: 35px; 
-        bottom: 24px;
+        right: 10px; 
+        bottom: 0px;
     }
-    
 }
 
 .rewiews {
@@ -403,7 +417,7 @@
         margin-bottom: 40px;
     }
 
-    &__cards {
+    &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
@@ -502,22 +516,22 @@
     &__title {
         margin-bottom: 40px;
     }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 33px;
+    }
 }
 
 .advantages-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 33px;
-
-    &__block {
-        padding: 24px;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        border-radius: 16px;
-        background: var(--bg-color);
-        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
-    }
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--bg-color);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
 
     &__pic {
         padding: 10px;
@@ -525,5 +539,6 @@
         background: rgba(255, 103, 67, 0.05);
         width: 44px;
         height: 44px;
+        flex-shrink: 0;
     }
 }
