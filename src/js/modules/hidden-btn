@@ -1,0 +1,31 @@
+const authInit = () => {
+    const toggleRegistrationAuth = document.querySelector('.sign-up-window__sign-in-btn')
+    const toggleRegistrationReg = document.querySelector('.sign-up-window__sign-up-btn')
+    const toggleAuthorisationAuth = document.querySelector('.sign-in-window__sign-in-btn')
+    const toggleAuthorisationReg = document.querySelector('.sign-in-window__sign-up-btn')
+
+    if (!toggleRegistrationAuth) return
+    if (!toggleRegistrationReg) return
+    if (!toggleAuthorisationAuth) return
+    if (!toggleAuthorisationReg) return
+
+    const signIn = document.querySelector('.sign-in-window')
+    const signUp = document.querySelector('.sign-up-window')
+    
+    const handleToggleSignIn = () => {
+        signIn.classList.add('sign-in-window_active')
+        signUp.classList.remove('sign-up-window_active')
+    }
+    
+    const handleToggleSignUp = () => {
+        signUp.classList.add('sign-up-window_active')
+        signIn.classList.remove('sign-in-window_active')
+    }
+
+    toggleRegistrationAuth.addEventListener('click', handleToggleSignIn)
+    toggleRegistrationReg.addEventListener('click', handleToggleSignUp)
+    toggleAuthorisationAuth.addEventListener('click', handleToggleSignIn)
+    toggleAuthorisationReg.addEventListener('click', handleToggleSignUp)
+}
+
+export default authInit

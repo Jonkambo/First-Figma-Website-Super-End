@@ -1,0 +1,139 @@
+.form-auth {
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    form {
+        padding-top: 24px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+
+    &__label {
+        color: var(--dialog-input-color);
+        cursor: pointer;
+
+        &::after {
+            color: #ED0A34;
+            content: '*';
+        }
+    }
+
+    &__input {
+        height: 38px;
+        padding: 9px 12px;
+        width: 400px;
+        outline: none;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+
+        &:hover {
+            border: 1px solid var(--btn-color-hover);
+        }
+    }
+
+    &__link {
+        width: 100%;
+    }
+
+    &__btn {
+        margin-top: 24px;
+        padding: 9px 16px;
+        width: 100%;
+    }
+
+    &__checkbox-group {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__checkbox-label {
+        margin: 8px 0;
+        color: #2C2D2E;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+    }
+}
+
+.sign-in-window {
+    padding: 24px;
+    background-color: var(--bg-color);
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 3px 8px 0px rgba(0, 17, 51, 0.08), 0px 18px 28px 0px rgba(0, 17, 51, 0.16);
+
+    &_active {
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__sign-in-btn_active {
+        border: 1px solid var(--btn-color-hover);
+    }
+}
+
+.sign-up-window {
+    padding: 24px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--bg-color);
+    box-shadow: 0px 3px 8px 0px rgba(0, 17, 51, 0.08), 0px 18px 28px 0px rgba(0, 17, 51, 0.16);
+
+    &__sign-up-btn_active {
+        border: 1px solid var(--btn-color-hover);
+    }
+    
+    &_active {
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    hr {
+        box-sizing: border-box;
+        height: 4px;
+        background: rgba(0, 16, 61, 0.12);
+        border: none;
+        margin: 8px 0;
+    }
+
+    &__pass-info {
+        margin-bottom: 16px;
+        margin-top: 8px;
+        font-size: 13px;
+        color: #919399;
+    }
+}
+
+.input-password {
+    background: url(.././assets/images/eye.svg) no-repeat right;
+    background-position-x: calc(100% - 9px);
+    background-color: var(--bg-color);
+}

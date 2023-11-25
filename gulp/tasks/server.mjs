@@ -1,16 +1,16 @@
-import gulp from 'gulp'
-import gulpServer from 'gulp-server-livereload'
+import browserSync from 'browser-sync'
 import { paths } from '../config.mjs'
 
+const serverBS = browserSync.create()
 const serverConfig = {
-    livereload: true,
-    open: true
+    server: {
+        baseDir: paths.dist._
+    }
 }
 
 const server = () => {
-    return gulp
-        .src(paths.dist._)
-        .pipe(gulpServer(serverConfig))
+    serverBS.init(serverConfig)
 }
 
 export default server
+export { serverBS }

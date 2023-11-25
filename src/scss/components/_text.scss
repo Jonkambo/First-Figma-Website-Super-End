@@ -82,3 +82,24 @@
     font-weight: 400;
     line-height: 125% 
 }
+
+.forgot-pass {
+    color: #005BD1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
+    margin: 0;
+}
+
+.auth-footer {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link:hover {
+        transition: color 0.2s ease-in;
+        color: var(--primary-color-btn);
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & OpenGraph -->
+    <title>Окно авторизации</title>
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/images/og.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="">
+
+    <!-- Favicon -->
+    @@include('layout/_favicon.html')
+
+    <!-- Preload Fonts -->
+    @@include('layout/_fonts.html')
+
+    <!-- Styles -->
+    @@include('layout/_styles.html')
+</head>
+<body>
+    <!-- Header -->
+    @@include('layout/_header.html')
+    <style>
+        .authentification {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            <div class="form-auth">
+                <div class="sign-in-window sign-in-window_active">
+                    <p class="form-auth__title mini-title">Авторизация</p>
+                    <div class="form-auth__btns">
+                        <button class="btn-sing sign-in-window__sign-in-btn sign-in-window__sign-in-btn_active reset-btn" type="button">Вход</button>
+                        <button class="btn-sing sign-in-window__sign-up-btn reset-btn" type="button">Регистрация</button>
+                    </div>
+                    <form>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-name">E-mail</label>
+                            <input class="form-auth__input" type="text" name="auth-name" id="auth-name">
+                        </div>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-pass">Пароль</label>
+                            <input class="form-auth__input" type="text" name="auth-pass" id="auth-pass">
+                        </div>
+                    </form>
+                    <a href="#" class="form-auth__link forgot-pass reset-link">
+                        Восстановить пароль
+                    </a>
+                    <button class="form-auth__btn create-deal reset-btn">
+                        Войти
+                    </button>
+                </div>
+
+                <div class="sign-up-window">
+                    <p class="form-auth__title mini-title">Регистрация</p>
+                    <div class="form-auth__btns">
+                        <button class="btn-sing sign-up-window__sign-in-btn reset-btn" type="button">Вход</button>
+                        <button class="btn-sing sign-up-window__sign-up-btn sign-up-window__sign-up-btn_active reset-btn" type="button">Регистрация</button>
+                    </div>
+                    <form>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-in-name">Имя</label>
+                            <input class="form-auth__input" type="text" name="auth-in-name" id="auth-in-name">
+                        </div>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-lastname">Фамилия</label>
+                            <input class="form-auth__input" type="text" name="auth-lastname" id="auth-lastname">
+                        </div>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-phone">Телефон</label>
+                            <input class="form-auth__input" type="tel" name="auth-phone" id="auth-phone">
+                        </div>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-email">E-mail</label>
+                            <input class="form-auth__input" type="email" name="auth-email" id="auth-email">
+                        </div>
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-in-pass">Пароль</label>
+                            <input class="form-auth__input input-password" type="password" name="auth-in-pass" id="auth-in-pass">
+                        </div>
+
+                        <hr>
+
+                        <p class="sign-up-window__pass-info forgot-pass">Пароль должен содержать не менее 8 символов, латиницу, <br> цифры, один из символов (!$#%)</p>
+
+                        <div class="form-auth__group">
+                            <label class="form-auth__label advantages-info" for="auth-repeat-in-pass">Подтверждение пароля</label>
+                            <input class="form-auth__input input-password" type="password" name="auth-repeat-in-pass" id="auth-repeat-in-pass">
+                        </div>
+
+                        <div class="form-auth__checkbox-group">
+                            <input class="form-auth__checkbox" type="checkbox" name="auth-in-radio" id="auth-in-radio">
+                            <label class="form-auth__checkbox-label advantages-info" for="auth-in-radio">Согласен с Privacy policy</label>
+                        </div>
+                    </form>
+
+                    <button class="form-auth__btn create-deal reset-btn">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="auth-footer">
+                <p class="auth-footer__info advantages-info">© 2022 PRO-DEAL <br>Все права защищены</p>
+                <a href="#" class="auth-footer__link advantages-info reset-link">Помощь</a>
+            </div>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    
+
+    <!-- Scripts -->
+    @@include('layout/_scripts.html')
+</body>
+</html>

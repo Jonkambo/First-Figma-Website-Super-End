@@ -1,4 +1,9 @@
-import A11yDialog from 'a11y-dialog'
+import requestDialogInit from "./modules/dialog-window"
+import authInit from "./modules/hidden-btn"
 
-const container = document.querySelector('#dialog-window')
-const dialog = new A11yDialog(container)
+const init = () => {
+    requestDialogInit()
+    authInit()
+}
+
+init()
