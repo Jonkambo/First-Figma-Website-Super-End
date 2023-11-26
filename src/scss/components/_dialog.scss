@@ -105,3 +105,20 @@
         width: 580px;
     }
 }
+
+@media (max-width: $tablet-bp) {
+    .dialog {
+        &__window {
+            width: 768px;
+        }
+
+        &__btn-applicaton, &__input {
+            width: 543px;
+        }
+
+        &__forms {
+            align-items: center;
+            padding: 0;
+        }
+    }
+}
