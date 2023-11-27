@@ -197,16 +197,17 @@
         opacity: 1;
         z-index: 11;
         pointer-events: all;
-        top: calc(100% + 486px);
-        left: 145px;
+        top: calc(100% + 456px);
+        left: 78px;
+        
     }
 
     .requisites_active {
         opacity: 1;
         z-index: 11;
         pointer-events: all;
-        top: calc(100% + 456px);
-        left: 65px;
+        top: calc(100% + 486px);
+        left: 151px;
     }
 
     .menu {
@@ -269,6 +270,35 @@
                     transform: translateY(8.5px) rotate(-45deg);
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .phone-time {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .navigation {
+
+        &__burger {
+            left: 0;
+        }
+
+        &__logo {
+            margin-left: 10px;
+            width: 126px;
+        }
+    }
+
+    .contact {
+
+        &__btn {
+            padding: 12px 40px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }

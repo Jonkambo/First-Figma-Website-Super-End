@@ -148,6 +148,7 @@
 
 .how-it-works{
     width: 100%;
+
     &__title {
         margin-bottom: 40px;
     }
@@ -579,14 +580,18 @@
         position: absolute;
         pointer-events: none;
     }
+
+    .card {
+        padding: 32px 28px;
+    }
+    
+    .advantages-info {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: $tablet-bp) {
     .about-service {
-        &__title {
-            font-size: 28px;
-        }
-
         &__content {
             gap: 55px;
         }
@@ -627,15 +632,8 @@
 }
 
 @media (max-width: $tablet-bp) {
-    .how-it-works {
-        &__title {
-            font-size: 28px;
-            line-height: 120%;
-        }
-
-        &__content {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    .how-it-works__content {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .selection-block {
@@ -656,8 +654,6 @@
 
         &__title {
             width: 323px;
-            font-size: 32px;
-            line-height: 120%;
         }
 
         &__info {
@@ -670,9 +666,7 @@
 
 
 @media (max-width: $tablet-bp) {
-
     .calculator {
-
         &__title {
             opacity: 0;
             pointer-events: none;
@@ -683,14 +677,16 @@
                 opacity: 1;
                 pointer-events: all;
                 position: relative;
-                font-size: 28px;
-                line-height: 120%;
             }
         }
 
         &__section {
             padding: 40px;
         }
+    }
+
+    .underlining {
+        background: var(--bg-color);
     }
 
     .frames {
@@ -745,10 +741,6 @@
         margin-bottom: 0;
 
         &__title {
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
             width: 340px;
         }
     }
@@ -773,19 +765,7 @@
             line-height: 140%;
         }
 
-        &:nth-child(1) &__text {
-            width: 308px;
-        }
-    
-        &:nth-child(2) &__text {
-            width: 308px;
-        }
-    
-        &:nth-child(3) &__text {
-            width: 308px;
-        }
-    
-        &:nth-child(4) &__text {
+        &:nth-child(1) &__text, &:nth-child(2) &__text, &:nth-child(3) &__text, &:nth-child(4) &__text {
             width: 308px;
         }
 
@@ -823,9 +803,8 @@
     .advantages-work {
         margin-bottom: 0;
         padding: 30px 0;
+
         &__title {
-            font-size: 28px;
-            line-height: 120%;
             width: 340px;
         }
 
@@ -843,10 +822,14 @@
 @media (max-width: $tablet-bp) {
     .rewiews {
         padding: 30px 0;
+    }
 
-        &__title {
-            font-size: 28px;
-            line-height: 120%;
+    .rewiew-card {
+        gap: 0;
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }
@@ -856,8 +839,6 @@
         padding: 20px 0;
 
         &__title {
-            font-size: 28px;
-            line-height: 120%;
             width: 248px;
         }
 
@@ -867,7 +848,7 @@
 
         &__container {
             gap: 66px;
-            padding: 40px;
+            padding: 40px 20px;
         }
     }
 
@@ -877,5 +858,174 @@
         &__confidency {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .about-company {
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .card:nth-child(2) {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .about-service {
+        &__content {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    .advantage-info {
+        flex-direction: row;
+        width: 336px;
+
+        & > p {
+            font-size: 14px;
+            padding: 12px 10px;
+        }
+    }
+
+    .warranty {
+        &__text {
+            font-size: 16px;
+            width: 100%;
+        }
+
+        &__proof {
+            width: 100%;
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 336px;
+            font-size: 12px;
+        }
+
+        &__picture {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .how-it-works {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .selection-block {
+        padding: 20px;
+        gap: 10px;
+
+        &__info {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .calculator {
+
+        &__section {
+            padding: 20px;
+        }
+
+        &__title {
+            &_table {
+                width: 323px;
+                font-size: 28px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .frames {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calc-radio {
+        label {
+            font-size: 16px;
+            padding-left: 25px;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .what-selling {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .advantages-work {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .advantages-cards {
+        gap: 10px;
+
+        & > p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .rewiews {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .rewiew-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .answer-form {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .feedback {
+        width: 100%;
     }
 }

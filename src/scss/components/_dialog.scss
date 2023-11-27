@@ -15,6 +15,7 @@
     &[aria-hidden="true"] {
         opacity: 0;
         pointer-events: none;
+        position: absolute;
     }
 
     &__title {
@@ -119,6 +120,23 @@
         &__forms {
             align-items: center;
             padding: 0;
+        }
+    }
+}
+
+@media (max-width: $tablet-bp) {
+    .dialog {
+
+        &__window {
+            width: 335px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__input, &__btn-applicaton {
+            width: 100%;
         }
     }
 }

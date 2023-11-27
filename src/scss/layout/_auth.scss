@@ -38,8 +38,8 @@
     &__input {
         height: 38px;
         padding: 9px 12px;
-        width: 400px;
         outline: none;
+        width: 400px;
         border-radius: 6px;
         border: 1px solid rgba(0, 16, 61, 0.12);
 
@@ -157,5 +157,15 @@
     &__link:hover {
         transition: color 0.2s ease-in;
         color: var(--primary-color-btn);
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .sign-in-window {
+        width: 100%;
+    }
+
+    .form-auth__input {
+        width: 100%;
     }
 }

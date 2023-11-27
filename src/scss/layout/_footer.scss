@@ -44,6 +44,11 @@
             color: var(--btn-color-active);
         }
     }
+
+    &__info {
+        display: flex;
+        gap: 324px;
+    }
 }
 
 .social {
@@ -61,7 +66,7 @@
         transition: color 0.2s ease-in;
 
         & > svg {
-            fill: var(--btn-color);
+            fill: #919399;
         }
 
         &:hover {
@@ -91,5 +96,54 @@
 @media (max-width: $tablet-bp) {
     .footer {
         padding: 30px 0;
+
+        &__info {
+            gap: 88px;
+        }
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .footer {
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        &__company {
+            width: 100%;
+        }
+
+        &__info {
+            width: 100%;
+            align-items: end;
+            display: flex;
+            gap: 23px;
+        }
+
+        &__logo {
+            width: 167px;
+        }
+
+        &__info {
+            gap: 23px;
+            width: 100%;
+        }
+
+        &__privacy {
+            font-size: 16px;
+        }
+    }
+
+    .social {
+        &__number {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
     }
 }
