@@ -29,6 +29,10 @@
     @@include('layout/_dialog.html')
     <!-- End Dialog -->
 
+    <!-- Dialog -->
+    @@include('layout/_dialog-auth.html')
+    <!-- End Dialog -->
+
     <!-- Header -->
     @@include('layout/_header.html')
     <!-- End Header -->
@@ -54,45 +58,44 @@
         </section>
 
         <section class="possibilities">
-            <h3 class="visually-hidden">Возможности агрегатора</h3>
-            <div class="container possibilities-cards">
-                <article class="possiblities__card card">
+            <div class="container possibilities__content">
+                <article class="card">
                     <div class="card__title">
                         <p class="card__header h3">Покупателям</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path d="M12 8L20 16L12 24" stroke="#2C2D2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <ul class="card__advantages advantages reset-list">
-                        <li class="advantages__stroke">
+                    <ul class="card__content advantages reset-list">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Безопасные онлайн покупки</p>
                         </li>
 
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Возможность приобретить товары из другого города</p>
                         </li>
 
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Быстрая доставка</p>
                         </li>
 
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Возможность проверки и примерки покупки</p>
                         </li>
 
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -101,39 +104,39 @@
                     </ul>
                 </article>
 
-                <article class="possiblities__card card">
+                <article class="card">
                     <div class="card__title">
                         <h3 class="card__header h3">Продавцам</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path d="M12 8L20 16L12 24" stroke="#2C2D2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <ul class="card__advantages advantages reset-list">
-                        <li class="advantages__stroke">
+                    <ul class="card__content advantages reset-list">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Безопасные онлайн продажи</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Доставка товаров клиентам по низким ценам</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Возврат товара при отказе</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Онлайн оформление сопроводительных документов</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -142,36 +145,36 @@
                     </ul>
                 </article>
 
-                <article class="possiblities__card card">
+                <article class="card">
                     <div class="card__title">
                         <h3 class="card__header h3">Площадкам</h3>
                     </div>
-                    <ul class="card__advantages advantages reset-list">
-                        <li class="advantages__stroke">
+                    <ul class="card__content advantages reset-list">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Новый способ монетизации проекта</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Повышение доверия пользователей</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Продажа через социальные сети и площадки</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p class="advantages-info">Новые услуги и сервисы для клиентов</p>
                         </li>
-                        <li class="advantages__stroke">
+                        <li class="advantages">
                             <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 13L9 17L19 7" stroke="#FF6743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -183,9 +186,8 @@
         </section>
 
         <section class="about-service section">
-            <h2 class="visually-hidden">О сервисе Prodeal</h2>
             <div class="container">
-                <p class="about-service__title h2">О сервисе Prodeal</p>
+                <h2 class="about-service__title h2">О сервисе Prodeal</h2>
                 <div class="about-service__content">
                     <div class="advantage-info">
                         <p class="text-info advantage-color">Низкая стоимость</p>
@@ -217,9 +219,8 @@
         </section>
 
         <section class="how-it-works section">
-            <h2 class="visually-hidden">Как это работает?</h2>
             <div class="container">
-                <p class="how-it-works__title h2">Как это работает?</p>
+                <h2 class="how-it-works__title h2">Как это работает?</h2>
                 <div class="how-it-works__content">
                     <div class="selection-block">
                         <div class="selection-block__img">
@@ -306,10 +307,9 @@
         </section>
 
         <section class="calculator section">
-            <h2 class="visually-hidden">Калькулятор безопасной сделки</h2>
             <div class="container calculator__section">
-                <p class="calculator__title h2">Калькулятор <br> безопасной сделки</p>
-                <p class="calculator__title calculator__title_table h2">Калькулятор безопасной сделки</p>
+                <h2 class="calculator__title h2">Калькулятор <br> безопасной сделки</h2>
+                <h2 class="calculator__title calculator__title_table h2">Калькулятор безопасной сделки</h2>
                 <form class="calculator__frames frames">
                     <article class="frames__info">
                         <p class="selection-content selection-content_white">Информация о товаре</p>
@@ -416,9 +416,7 @@
         </section>
 
         <section class="what-selling">
-            <h2 class="visually-hidden">Что можно продавать при помощи сервиса</h2>
             <div class="container">
-                <p class="what-selling__title h2">Что можно продавать при помощи сервиса</p>
                 <div class="what-selling__content">
                     <article class="sell-info">
                         <p class="sell-info__info-text mini-title">
@@ -477,9 +475,8 @@
         </section>
 
         <section class="advantages-work">
-            <h2 class="visually-hidden">Преимущества работы с сервисом Prodeal</h2>
             <div class="container">
-                <p class="advantages-work__title h2">Преимущества работы с сервисом Prodeal</p>
+                <h2 class="advantages-work__title h2">Преимущества работы с сервисом Prodeal</h2>
                 <div class="advantages-work__content">
                     <div class="advantages-cards">
                         <svg class="advantages-cards__pic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -522,83 +519,83 @@
         </section>
 
         <section class="rewiews">
-            <h2 class="visually-hidden">Отзывы</h2>
             <div class="container">
-                <p class="rewiews__title h2">Отзывы наших клиентов</p>
-                <div class="rewiews__content">
-                    <article class="rewiew-card">
-                        <div class="rewiew-card__title">
-                            <div  class="rewiew-card__avatar">
-                                <picture>
-                                    <source srcset="./assets/images/review-1.avif" type="image/avif">
-                                    <source srcset="./assets/images/review-1.webp" type="image/webp">
-                                    <img src="./assets/images/review-1.png" alt="avatar">
-                                </picture>
+                <h2 class="rewiews__title h2">Отзывы наших клиентов</h2>
+                <div class="rewiews__content swiper">
+                    <div class="swiper-wrapper">
+                        <article class="rewiew-card swiper-slide">
+                            <div class="rewiew-card__title">
+                                <div  class="rewiew-card__avatar">
+                                    <picture>
+                                        <source srcset="./assets/images/review-1.avif" type="image/avif">
+                                        <source srcset="./assets/images/review-1.webp" type="image/webp">
+                                        <img src="./assets/images/review-1.png" alt="avatar">
+                                    </picture>
+                                </div>
+                                <div class="rewiew-card__name">
+                                    <p class="rewiew-card__info selection-content">Максим Фролов</p>
+                                    <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
                             </div>
-                            <div class="rewiew-card__name">
-                                <p class="rewiew-card__info selection-content">Максим Фролов</p>
-                                <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
+                        </article>
+    
+                        <article class="rewiew-card swiper-slide">
+                            <div class="rewiew-card__title">
+                                <div  class="rewiew-card__avatar">
+                                    <picture>
+                                        <source srcset="./assets/images/review-2.avif" type="image/avif">
+                                        <source srcset="./assets/images/review-2.webp" type="image/webp">
+                                        <img src="./assets/images/review-2.png" alt="avatar">
+                                    </picture>
+                                </div>
+                                <div class="rewiew-card__name">
+                                    <p class="rewiew-card__info selection-content">Александр Исаев</p>
+                                    <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
                             </div>
-                        </div>
-                        <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
-                    </article>
-
-                    <article class="rewiew-card">
-                        <div class="rewiew-card__title">
-                            <div  class="rewiew-card__avatar">
-                                <picture>
-                                    <source srcset="./assets/images/review-2.avif" type="image/avif">
-                                    <source srcset="./assets/images/review-2.webp" type="image/webp">
-                                    <img src="./assets/images/review-2.png" alt="avatar">
-                                </picture>
+                            <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
+                        </article>
+    
+                        <article class="rewiew-card swiper-slide">
+                            <div class="rewiew-card__title">
+                                <div  class="rewiew-card__avatar">
+                                    <picture>
+                                        <source srcset="./assets/images/review-3.avif" type="image/avif">
+                                        <source srcset="./assets/images/review-3.webp" type="image/webp">
+                                        <img src="./assets/images/review-3.png" alt="avatar">
+                                    </picture>
+                                </div>
+                                <div class="rewiew-card__name">
+                                    <p class="rewiew-card__info selection-content">Михаил Родионов</p>
+                                    <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
                             </div>
-                            <div class="rewiew-card__name">
-                                <p class="rewiew-card__info selection-content">Александр Исаев</p>
-                                <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
+                        </article>
+    
+                        <article class="rewiew-card swiper-slide">
+                            <div class="rewiew-card__title">
+                                <div  class="rewiew-card__avatar">
+                                    <picture>
+                                        <source srcset="./assets/images/review-4.avif" type="image/avif">
+                                        <source srcset="./assets/images/review-4.webp" type="image/webp">
+                                        <img src="./assets/images/review-4.png" alt="avatar">
+                                    </picture>
+                                </div>
+                                <div class="rewiew-card__name">
+                                    <p class="rewiew-card__info selection-content">Руслан Аримов</p>
+                                    <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
                             </div>
-                        </div>
-                        <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
-                    </article>
-
-                    <article class="rewiew-card">
-                        <div class="rewiew-card__title">
-                            <div  class="rewiew-card__avatar">
-                                <picture>
-                                    <source srcset="./assets/images/review-3.avif" type="image/avif">
-                                    <source srcset="./assets/images/review-3.webp" type="image/webp">
-                                    <img src="./assets/images/review-3.png" alt="avatar">
-                                </picture>
-                            </div>
-                            <div class="rewiew-card__name">
-                                <p class="rewiew-card__info selection-content">Михаил Родионов</p>
-                                <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            </div>
-                        </div>
-                        <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
-                    </article>
-
-                    <article class="rewiew-card">
-                        <div class="rewiew-card__title">
-                            <div  class="rewiew-card__avatar">
-                                <picture>
-                                    <source srcset="./assets/images/review-4.avif" type="image/avif">
-                                    <source srcset="./assets/images/review-4.webp" type="image/webp">
-                                    <img src="./assets/images/review-4.png" alt="avatar">
-                                </picture>
-                            </div>
-                            <div class="rewiew-card__name">
-                                <p class="rewiew-card__info selection-content">Руслан Аримов</p>
-                                <svg width="97" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.225 5.692 7.957 2.02a.629.629 0 0 1 .224-.258.585.585 0 0 1 .638 0 .629.629 0 0 1 .224.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L8.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.665.665 0 0 1-.152-.65.635.635 0 0 1 .185-.29.587.587 0 0 1 .303-.141l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L28.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.185.289a.664.664 0 0 1-.153.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L48.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L68.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Zm20 0 1.732-3.672a.63.63 0 0 1 .224-.258.585.585 0 0 1 .639 0 .628.628 0 0 1 .223.258l1.732 3.672 3.872.592a.588.588 0 0 1 .304.142c.086.076.15.176.186.289a.664.664 0 0 1-.154.651l-2.802 2.857.662 4.035c.084.518-.436.912-.88.668L88.5 13.02l-3.463 1.906c-.444.245-.964-.15-.88-.67l.662-4.034-2.802-2.856a.642.642 0 0 1-.164-.303.666.666 0 0 1 .012-.348.636.636 0 0 1 .185-.288.588.588 0 0 1 .303-.142l3.872-.593Z" fill="#FFD400" stroke="#FFD400" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            </div>
-                        </div>
-                        <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
-                    </article>
+                            <p class="rewiew-card__text rewiew-text">Добрый день! Воспользовался сервисом «Prodeal». Всё прошло хорошо! Давно пользуюсь Сдэком и это здорово, что к нему подключился такой полезный сервис. Всё прозрачно и понятно! Можно прописать условие сделки, приложить фото товара. Единственное, комиссию сервиса хотелось бы чуть поменьше. Рекомендую!</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="answer-form">
-            <h2 class="visually-hidden">Форма для оформления заявки на консультацию</h2>
             <div class="container">
                 <div class="answer-form__container">
                     <div class="answer-form__another-answer">

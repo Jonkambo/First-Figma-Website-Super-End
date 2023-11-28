@@ -124,9 +124,8 @@
     }
 }
 
-@media (max-width: $tablet-bp) {
+@media (max-width: $mobile-bp) {
     .dialog {
-
         &__window {
             width: 335px;
         }
