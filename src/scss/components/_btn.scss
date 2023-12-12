@@ -1,0 +1,90 @@
+.btn-join {
+    padding: 12px 40px;
+    background-color: var(--btn-color);
+    border-radius: 1000px;
+    color: var(--bg-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--btn-color-hover);
+    }
+
+    &:active {
+        background-color: var(--btn-color-active);
+        transform: scale(0.98);
+    }
+}
+
+.create-deal {
+    padding: 16px 40px;
+    background-color: var(--btn-color-hover);
+    color: var(--bg-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 1000px;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--bg-color);
+        color: var(--btn-color);
+        outline: 2px solid var(--btn-color-hover);
+    }
+
+    &:active {
+        background-color: var(--primary-color-btn);
+        transform: scale(0.98);
+    }
+}
+
+.btn-applicaton {
+    padding: 15px 20px;
+    background-color: var(--btn-color-hover);
+    color: var(--bg-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 1000px;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--bg-color);
+        color: var(--btn-color);
+        outline: 2px solid var(--btn-color-hover);
+    }
+
+    &:active {
+        background-color: var(--primary-color-btn);
+        transform: scale(0.98);
+    }
+}
+
+.btn-sing {
+    padding: 9px 12px;
+    background: var(--bg-color);
+    color: var(--btn-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    width: 100%;
+
+    &:nth-child(1) {
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    &:nth-child(2) {
+        border-radius: 0px 6px 6px 0px;
+    }
+}

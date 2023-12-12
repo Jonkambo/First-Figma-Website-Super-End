@@ -1,0 +1,28 @@
+// Breakpoints
+$tablet-bp: 1319.98px;
+$mobile-bp: 559.98px;
+
+// Units
+
+:root {
+    // Colors
+    --bg-color: #fff;
+    --background-color: #333;
+    --text-color: #000;
+    --primary-color: #ffcdd4;
+    --primary-color-btn: #fcd5db;
+    --text-color-light: #FFF;
+    --btn-color: #2C2D2E;
+    --btn-color-hover: #FF6743;
+    --btn-color-light: #343b42;
+    --btn-color-active: #e2401c;
+    --scrool-bar: #858585;
+    --box-shadow-box: rgba(0, 0, 0, 0.08);
+    --grey-text: rgba(44, 45, 46, 0.80);
+    --dialog-input-color: #919399;
+    --dialog-input-text: #ADADAD;
+    --dialog-background: rgba(77, 77, 77, 0.6);
+
+    // Fonts
+    --main-font: "Inter", "Arial", sans-serif;
+}
